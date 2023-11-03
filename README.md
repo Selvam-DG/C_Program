@@ -40,11 +40,13 @@ declaration instruction, Arithmetic instruction, Control instruction.
 - The switch keyword is followed by an integer or an expression that evaluates to an integer. The case keyword is followed by an integer or a character constant.
 - 
 #### Function
-- To avoid repetition of code and bulky programs functionally related statements are isolated into a function. 
+- To avoid repetition of code and bulky programs functionally related statements are isolated into a function.
 - Function declaration specifies the return type of the function and the types of parameters it accepts. 
 - Function definition defines the body of the function.
 - Variables declared in a function are not available to other functions in a program. So, there won’t be any clash even if we give same name to the variables declared in different functions. 
 - In C order of passing arguments to a function is from right to left.
+-  A function can call itself. Such a process is called ‘recursion’.
+-  parameters also known as Arguments are passed inside the function. Actual Arguments are inside the main() function and formal arguments are in defined function.
 
 #### Pointers
 - pointers are variables that contain addresses, and since addresses are always whole numbers, pointers would always contain whole numbers.
@@ -56,4 +58,10 @@ declaration instruction, Arithmetic instruction, Control instruction.
 - Arguments can generally be passed to functions in one of the two ways:
     (a) sending the values of the arguments
     (b) sending the addresses of the arguments
-
+#### Recursion:
+- A function is called ‘recursive’ if a statement within the body of a function calls the same function
+- if you are to store five numbers then we can store them in five different variables, an array, a linked list, a binary tree, etc. All these different ways of organizing the data are known as data structures
+- A stack is a Last In First Out (LIFO) data structure
+- 
+- 
+- 
