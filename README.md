@@ -5,8 +5,10 @@
 
 #### Basic Idea in C:
 - Input/output in C can be achieved using scanf( ) and printf( ) functions.
-- A C program can contain three types of instructions—Type 
-declaration instruction, Arithmetic instruction, Control instruction.
+- A C program can contain three types of instructions—Type declaration instruction, Arithmetic instruction, Control instruction.
+- Remember that out of the two/four bytes used to store an integer, the highest bit (16th/32nd bit) is used to store the sign of the integer. This bit is 1 if the number is negative and 0 if the number is positive
+-  By default all the variables are signed. We can declare a variable as unsigned to accommodate bigger value without increasing the bytes occupied.
+
 #### Decision Making
 - There are three ways for taking decisions in a program. First way is to use the if-else statement, second way is to use the conditional operators and third way is to use the switch statement.
 - The condition associated with an if statement is built using relational operators <, >, <=, >=, == and !=.
@@ -63,5 +65,24 @@ declaration instruction, Arithmetic instruction, Control instruction.
 - if you are to store five numbers then we can store them in five different variables, an array, a linked list, a binary tree, etc. All these different ways of organizing the data are known as data structures
 - A stack is a Last In First Out (LIFO) data structure
 - 
-- 
-- 
+#### storage classes in C: 
+- Automatic storage class 
+    Storage: Memory.
+    Default value: An unpredictable value, often called a garbage value.
+    Scope: Local to the block in which the variable is defined.
+    Life: Till the control remains within the block in which the variable is defined.
+- Register storage class 
+    Storage: CPU registers.
+    Default value: Garbage value.
+    Scope: Local to the block in which the variable is defined.
+    Life: Till the control remains within the block in which the variable is defined.
+- Static storage class
+    Storage: Memory.
+    Default value: Zero.
+    Scope: Local to the block in which the variable is defined.
+    Life: Value of the variable persists between different function calls
+- External storage class
+      Storage: Memory.
+    Default value: Zero.
+    Scope: Global.
+    Life: As long as the program’s execution doesn’t come to an end
