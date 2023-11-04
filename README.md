@@ -58,8 +58,8 @@
 - A function can be called either by value or by reference.
 - Pointers can be used to make a function return more than one value simultaneously in an indirect manner.
 - Arguments can generally be passed to functions in one of the two ways:
-    (a) sending the values of the arguments
-    (b) sending the addresses of the arguments
+    - sending the values of the arguments
+    - sending the addresses of the arguments
 #### Recursion:
 - A function is called ‘recursive’ if a statement within the body of a function calls the same function
 - if you are to store five numbers then we can store them in five different variables, an array, a linked list, a binary tree, etc. All these different ways of organizing the data are known as data structures
@@ -72,17 +72,17 @@
     - Scope: Local to the block in which the variable is defined.
     - Life: Till the control remains within the block in which the variable is defined.
 - Register storage class 
-    Storage: CPU registers.
-    Default value: Garbage value.
-    Scope: Local to the block in which the variable is defined.
-    Life: Till the control remains within the block in which the variable is defined.
+    - Storage: CPU registers.
+    - Default value: Garbage value.
+    - Scope: Local to the block in which the variable is defined.
+    - Life: Till the control remains within the block in which the variable is defined.
 - Static storage class
-    Storage: Memory.
-    Default value: Zero.
-    Scope: Local to the block in which the variable is defined.
-    Life: Value of the variable persists between different function calls
+    - Storage: Memory.
+    - Default value: Zero.
+    - Scope: Local to the block in which the variable is defined.
+    - Life: Value of the variable persists between different function calls
 - External storage class
-      Storage: Memory.
-    Default value: Zero.
-    Scope: Global.
-    Life: As long as the program’s execution doesn’t come to an end
+    - Storage: Memory.
+    - Default value: Zero.
+    - Scope: Global.
+    - Life: As long as the program’s execution doesn’t come to an end
