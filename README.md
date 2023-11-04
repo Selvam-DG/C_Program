@@ -67,10 +67,10 @@
 - 
 #### storage classes in C: 
 - Automatic storage class 
-    Storage: Memory.
-    Default value: An unpredictable value, often called a garbage value.
-    Scope: Local to the block in which the variable is defined.
-    Life: Till the control remains within the block in which the variable is defined.
+    - Storage: Memory.
+    - Default value: An unpredictable value, often called a garbage value.
+    - Scope: Local to the block in which the variable is defined.
+    - Life: Till the control remains within the block in which the variable is defined.
 - Register storage class 
     Storage: CPU registers.
     Default value: Garbage value.
