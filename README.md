@@ -86,8 +86,8 @@
     - Default value: Zero.
     - Scope: Global.
     - Life: As long as the program’s execution doesn’t come to an end
-    - 
-    - signed char - 1 byte - %c - range from -128  to  +127
+- Data Types - Bytes - Format - Range
+    - signed char - 1 byte - %c -  -128  to  +127
     - unsigned char - 1 byte - %c 
     - short signed int - 2 bytes - %d
     - short unsigned int - 2 bytes - %u
