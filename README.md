@@ -86,15 +86,15 @@
     - Default value: Zero.
     - Scope: Global.
     - Life: As long as the program’s execution doesn’t come to an end
-- Data Types - Bytes - Format - Range
-    - signed char - 1 byte - %c -  -128  to  +127
-    - unsigned char - 1 byte - %c 
-    - short signed int - 2 bytes - %d
-    - short unsigned int - 2 bytes - %u
-    - signed int - 4 bytes - %d
-    - unsigned int - 4 bytes - %u
-    - long signed int - 4 bytes - %ld
-    - long unsigned int  - 4 bytes - %lu
-    - float - 4 bytes - %f
-    - double - 8 bytes - %lf
-    - long double - 10 bytes - %Lf
+#### Data Types - Bytes - Format - Range
+    - signed char - 1 byte - %c =>  -128  to  +127
+    - unsigned char - 1 byte - %c => 0  to  255
+    - short signed int - 2 bytes - %d => -32768  to  +32767
+    - short unsigned int - 2 bytes - %u => 0  to  65535-
+    - signed int - 4 bytes - %d =>  -2147483648  to  +2147483647
+    - unsigned int - 4 bytes - %u =>  0  to  4294967295
+    - long signed int - 4 bytes - %ld => -2147483648  to  +2147483647
+    - long unsigned int  - 4 bytes - %lu =>  0  to  4294967295
+    - float - 4 bytes - %f => -3.4e38  to +3.4e38
+    - double - 8 bytes - %lf => -1.7e308  to  +1.7e308
+    - long double - 10 bytes - %Lf => -1.7e4932  to  +1.7e4932
