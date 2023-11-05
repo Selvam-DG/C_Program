@@ -87,14 +87,14 @@
     - Scope: Global.
     - Life: As long as the program’s execution doesn’t come to an end
     - 
-    signed char - 1 byte - %c
-    unsigned char - 1 byte - %c
-    short signed int - 2 btes - %d
-    short unsigned int - 2 bytes - %u
-    signed int - 4 bytes - %d
-    unsigned int - 4 bytes - %u
-    long signed int - 4 bytes - %ld
-    long unsigned int  - 4 bytes - %lu
-    float - 4 bytes - %f
-    double - 8 bytes - %lf
-    long double - 10 bytes - %Lf
+    - signed char - 1 byte - %c - range from -128  to  +127
+    - unsigned char - 1 byte - %c 
+    - short signed int - 2 bytes - %d
+    - short unsigned int - 2 bytes - %u
+    - signed int - 4 bytes - %d
+    - unsigned int - 4 bytes - %u
+    - long signed int - 4 bytes - %ld
+    - long unsigned int  - 4 bytes - %lu
+    - float - 4 bytes - %f
+    - double - 8 bytes - %lf
+    - long double - 10 bytes - %Lf
