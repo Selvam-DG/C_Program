@@ -5,8 +5,10 @@
 
 #### Basic Idea in C:
 - Input/output in C can be achieved using scanf( ) and printf( ) functions.
-- A C program can contain three types of instructions—Type 
-declaration instruction, Arithmetic instruction, Control instruction.
+- A C program can contain three types of instructions—Type declaration instruction, Arithmetic instruction, Control instruction.
+- Remember that out of the two/four bytes used to store an integer, the highest bit (16th/32nd bit) is used to store the sign of the integer. This bit is 1 if the number is negative and 0 if the number is positive
+-  By default all the variables are signed. We can declare a variable as unsigned to accommodate bigger value without increasing the bytes occupied.
+
 #### Decision Making
 - There are three ways for taking decisions in a program. First way is to use the if-else statement, second way is to use the conditional operators and third way is to use the switch statement.
 - The condition associated with an if statement is built using relational operators <, >, <=, >=, == and !=.
@@ -56,12 +58,53 @@ declaration instruction, Arithmetic instruction, Control instruction.
 - A function can be called either by value or by reference.
 - Pointers can be used to make a function return more than one value simultaneously in an indirect manner.
 - Arguments can generally be passed to functions in one of the two ways:
-    (a) sending the values of the arguments
-    (b) sending the addresses of the arguments
+    - sending the values of the arguments
+    - sending the addresses of the arguments
 #### Recursion:
 - A function is called ‘recursive’ if a statement within the body of a function calls the same function
 - if you are to store five numbers then we can store them in five different variables, an array, a linked list, a binary tree, etc. All these different ways of organizing the data are known as data structures
 - A stack is a Last In First Out (LIFO) data structure
 - 
-- 
-- 
+#### storage classes in C: 
+- Automatic storage class 
+    - Storage: Memory.
+    - Default value: An unpredictable value, often called a garbage value.
+    - Scope: Local to the block in which the variable is defined.
+    - Life: Till the control remains within the block in which the variable is defined.
+- Register storage class 
+    - Storage: CPU registers.
+    - Default value: Garbage value.
+    - Scope: Local to the block in which the variable is defined.
+    - Life: Till the control remains within the block in which the variable is defined.
+- Static storage class
+    - Storage: Memory.
+    - Default value: Zero.
+    - Scope: Local to the block in which the variable is defined.
+    - Life: Value of the variable persists between different function calls
+- External storage class
+    - Storage: Memory.
+    - Default value: Zero.
+    - Scope: Global.
+    - Life: As long as the program’s execution doesn’t come to an end
+ 
+      - Use static storage class only if you want the value of a variable to persist between different function calls.  
+      -  Use register storage class for only those variables that are being used very often in a program. Reason is, there are very few CPU registers at our disposal and many of them might be busy doing something else. Make careful utilization of the scarce resources. A typical application of register storage class is loop counters, which get used a number of times in a program. 
+      - Use extern storage class for only those variables that are being used by almost all the functions in the program. This would avoid unnecessary passing of these variables as arguments when making a function call. Declaring all the variables as extern would amount to a lot of wastage of memory space because these variables would remain active throughout the life of the program. 
+      - If you don’t have any of the express needs mentioned above, then use the auto storage class. In fact, most of the times, we end up using the auto variables. This is because once we have used the variables in a function and are returning from it, we don’t mind losing them. 
+#### Data Types - Bytes - Format - Range
+    - signed char - 1 byte - %c =>  -128  to  +127
+    - unsigned char - 1 byte - %c => 0  to  255
+    - short signed int - 2 bytes - %d => -32768  to  +32767
+    - short unsigned int - 2 bytes - %u => 0  to  65535-
+    - signed int - 4 bytes - %d =>  -2147483648  to  +2147483647
+    - unsigned int - 4 bytes - %u =>  0  to  4294967295
+    - long signed int - 4 bytes - %ld => -2147483648  to  +2147483647
+    - long unsigned int  - 4 bytes - %lu =>  0  to  4294967295
+    - float - 4 bytes - %f => -3.4e38  to +3.4e38
+    - double - 8 bytes - %lf => -1.7e308  to  +1.7e308
+    - long double - 10 bytes - %Lf => -1.7e4932  to  +1.7e4932
+
+#### Preprocessor
+- Before a C program is compiled it is passed through another program called ‘Preprocessor’. The preprocessor offers several features called preprocessor directives. Each of these preprocessor directives begins with a # symbol
+
+- Usually macros make the program run faster but increase the program size, whereas functions make the program smaller and compact.
