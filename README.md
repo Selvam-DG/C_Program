@@ -103,3 +103,8 @@
     - float - 4 bytes - %f => -3.4e38  to +3.4e38
     - double - 8 bytes - %lf => -1.7e308  to  +1.7e308
     - long double - 10 bytes - %Lf => -1.7e4932  to  +1.7e4932
+
+#### Preprocessor
+- Before a C program is compiled it is passed through another program called ‘Preprocessor’. The preprocessor offers several features called preprocessor directives. Each of these preprocessor directives begins with a # symbol
+
+- Usually macros make the program run faster but increase the program size, whereas functions make the program smaller and compact.
