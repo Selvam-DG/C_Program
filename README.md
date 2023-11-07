@@ -112,10 +112,11 @@
   2. File inclusion 
   3. Conditional compilation 
   4. Miscellaneous directives
+- The preprocessor directives enable the programmer to write programs that are easy to develop, read, modify and transport to a different computer system.
  
 ###### Macro Expansion:
-- #define UPPER PI 3.1415
-        -  UPPER and PI in the above programs are often called ‘macro templates’, whereas, 25 and 3.1415 are called their corresponding ‘macro expansions’
+- #define PI 3.1415
+        - PI in the above programs are often called ‘macro templates’, whereas, 25 and 3.1415 are called their corresponding ‘macro expansions’
 - A #define directive is many a time used to define operator.
 - A #define directive could be used even to replace a condition
 - A #define directive could be used to replace even an entire C statement
@@ -123,11 +124,22 @@
 - Usually macros make the program run faster but increase the program size, whereas functions make the program smaller and compact.
 ##### File Inclusion:
 - #nclude "filename" =>  it simply causes the entire contents of filename to be inserted into the source code at that point in the program
-- The meaning of each of these forms is given below. 
-- #include "mylib.h"
-          - This command would look for the file mylib.h in the current directory as well as the specified list of directories as mentioned in the include search path that might have been set up. 
-- #include <mylib.h> 
-        - This command would look for the file mylib.h in the specified list of directories only.
+- Actually there exist two ways to write #include statement.
+   - #include "mylib.h"
+      - This command would look for the file mylib.h in the current directory as well as the specified list of directories as mentioned in the include search path that might have been set up. 
+   - #include <mylib.h> 
+      - This command would look for the file mylib.h in the specified list of directories only.
+##### Conditional Compiation
+- if we want, have the compiler skip over part of a source code by inserting the preprocessing commands #ifdef and #endif
+- The #if directive can be used to test whether an expression evaluates to a non-zero value or not. If the result of the expression is non-zero, then subsequent lines upto a #else, #elif or #endif re compiled, otherwise they are skipped
+
+##### Miscellaneous directives
+- There are two more preprocessor directives available, though they are not very commonly used. They are: 
+ (a) #undef 
+ (b) #pragma
+
+
+- We can make use of various preprocessor directives, such as #define, #include, #ifdef - #else - #endif, #if and #elif in our program.
 
 
 #### steps involved in converting a C program into an executable form.
@@ -141,4 +153,14 @@
         - Relocatable Object code        and          -  Object code of Library Functions
              Linker
         - Executable code (PR1.EXE)
+
+#### Array:
+- An array is a collective name given to a group of ‘similar quantities’ i.e, An array is a collection of similar elements.
+- The first element in the array is numbered 0, so the last element is 1 less than the size of the array.
+- An array is also known as a subscripted variable. 
+- Before using an array, its type and dimension must be declared. 
+- However big an array, its elements are always stored in contiguous memory locations
+- Array elements can be passed to a function by calling the function by value (i.e, pass array elements), or by reference (i.e, pass addresses of array elements)
+- A pointer when incremented always points to an immediately next location of its type.
+- Compiler doesn’t perform bounds checking on an array.
 
