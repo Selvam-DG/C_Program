@@ -111,9 +111,24 @@
   1. Macro expansion
   2. File inclusion 
   3. Conditional compilation 
-  4. Miscellaneous directives 
+  4. Miscellaneous directives
+ 
+###### Macro Expansion:
+- #define UPPER PI 3.1415
+        -  UPPER and PI in the above programs are often called ‘macro templates’, whereas, 25 and 3.1415 are called their corresponding ‘macro expansions’
+- A #define directive is many a time used to define operator.
+- A #define directive could be used even to replace a condition
+- A #define directive could be used to replace even an entire C statement
 
 - Usually macros make the program run faster but increase the program size, whereas functions make the program smaller and compact.
+##### File Inclusion:
+- #nclude "filename" =>  it simply causes the entire contents of filename to be inserted into the source code at that point in the program
+- The meaning of each of these forms is given below. 
+- #include "mylib.h"
+          - This command would look for the file mylib.h in the current directory as well as the specified list of directories as mentioned in the include search path that might have been set up. 
+- #include <mylib.h> 
+        - This command would look for the file mylib.h in the specified list of directories only.
+
 
 #### steps involved in converting a C program into an executable form.
 
