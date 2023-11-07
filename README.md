@@ -107,6 +107,11 @@
 
 #### Preprocessor
 - Before a C program is compiled it is passed through another program called ‘Preprocessor’. The preprocessor offers several features called preprocessor directives. Each of these preprocessor directives begins with a # symbol
+- following preprocessor  directives are in C
+          1. Macro expansion
+          2. File inclusion 
+          3. Conditional compilation 
+          4. Miscellaneous directives 
 
 - Usually macros make the program run faster but increase the program size, whereas functions make the program smaller and compact.
 
