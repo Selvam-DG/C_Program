@@ -2,16 +2,7 @@
 ### I've started a journey to explore C programming, a language renowned for its low-level control and real-time capabilities.
 #### In the exciting realm of mechatronics, where the combination of mechanical, electrical, and software engineering transforms ideas into automated reality, mastering C programming is a pivotal skill.
 ##### This programming knowledge will empower me to craft precise, responsive software for the mechatronic systems of the future. During my bachelor's study in 2015, I was introduced to the Basics of C# program which was the first time I operated a computer on my own.
-        - C Source code (PR1.C) 
-            Preprocessor  ( the C source code is expanded based on the preprocessor directives like #define, #include, #ifdef, etc)
-        - Expanded source code (PR1.I)
-             Compiler        (Here identifies the syntax errors in the expanded source code)
-        -  Assembly code (PR1.ASM)
-             Assembler (Here,  translate .ASM program into Relocatable object code .The .OBJ file that gets created is a specially formatted binary file.)
-        - Relocatable Object code        and          -  Object code of Library Functions
-             Linker
-        - Executable code (PR1.EXE)
-
+        
  
 #### Basic Idea in C:
 - Input/output in C can be achieved using scanf( ) and printf( ) functions.
@@ -118,3 +109,16 @@
 - Before a C program is compiled it is passed through another program called ‘Preprocessor’. The preprocessor offers several features called preprocessor directives. Each of these preprocessor directives begins with a # symbol
 
 - Usually macros make the program run faster but increase the program size, whereas functions make the program smaller and compact.
+
+#### steps involved in converting a C program into an executable form.
+
+        - **C Source code (PR1.C) **
+            Preprocessor  ( the C source code is expanded based on the preprocessor directives like #define, #include, #ifdef, etc)
+        - **Expanded source code (PR1.I)**
+             Compiler        (Here identifies the syntax errors in the expanded source code)
+        -  **Assembly code (PR1.ASM)**
+             Assembler (Here,  translate .ASM program into Relocatable object code .The .OBJ file that gets created is a specially formatted binary file.)
+        - **Relocatable Object code**        and          -  **Object code of Library Functions**
+             Linker
+        - **Executable code (PR1.EXE)**
+
