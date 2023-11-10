@@ -144,15 +144,15 @@
 
 #### steps involved in converting a C program into an executable form.
 
- - C Source code (PR1.C)
-         - Preprocessor          ( the C source code is expanded based on the preprocessor directives like #define, #include, #ifdef, etc)
- - Expanded source code (PR1.I)
-           - Compiler             (Here identifies the syntax errors in the expanded source code)
- -  Assembly code (PR1.ASM)
-           -   Assembler            (Here,  translate .ASM program into Relocatable object code. The .OBJ file that gets created is a specially formatted binary file.)
- - Relocatable Object code        and          -  Object code of Library Functions
-            Linker
- - Executable code (PR1.EXE)
+         - C Source code (PR1.C)
+                        Preprocessor          ( the C source code is expanded based on the preprocessor directives like #define, #include, #ifdef, etc)
+         - Expanded source code (PR1.I)
+                        Compiler             (Here identifies the syntax errors in the expanded source code)
+         -  Assembly code (PR1.ASM)
+                        Assembler            (Here,  translate .ASM program into Relocatable object code. The .OBJ file that gets created is a specially formatted binary file.)
+         - Relocatable Object code        and          -  Object code of Library Functions
+                        Linker
+         - Executable code (PR1.EXE)
 
 #### Array:
 - An array is a collective name given to a group of ‘similar quantities’ i.e, An array is a collection of similar elements.
@@ -163,4 +163,9 @@
 - Array elements can be passed to a function by calling the function by value (i.e, pass array elements), or by reference (i.e, pass addresses of array elements)
 - A pointer when incremented always points to an immediately next location of its type.
 - Compiler doesn’t perform bounds checking on an array.
+- *array[i] = *(*array+i))
+- It is possible to construct multidimensional arrays.
+- A 2-D array is a collection of several 1-D arrays.
+- A 3-D array is a collection of several 2-D arrays.        
+- All elements of a 2-D or a 3-D array are internally accessed using pointers.  
 
