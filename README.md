@@ -144,15 +144,15 @@
 
 #### steps involved in converting a C program into an executable form.
 
-        - C Source code (PR1.C)
-            Preprocessor          ( the C source code is expanded based on the preprocessor directives like #define, #include, #ifdef, etc)
-        - Expanded source code (PR1.I)
-             Compiler             (Here identifies the syntax errors in the expanded source code)
-        -  Assembly code (PR1.ASM)
-             Assembler            (Here,  translate .ASM program into Relocatable object code .The .OBJ file that gets created is a specially formatted binary file.)
-        - Relocatable Object code        and          -  Object code of Library Functions
-             Linker
-        - Executable code (PR1.EXE)
+ - C Source code (PR1.C)
+    - Preprocessor          ( the C source code is expanded based on the preprocessor directives like #define, #include, #ifdef, etc)
+ - Expanded source code (PR1.I)
+   - Compiler             (Here identifies the syntax errors in the expanded source code)
+ -  Assembly code (PR1.ASM)
+   - Assembler            (Here,  translate .ASM program into Relocatable object code .The .OBJ file that gets created is a specially formatted binary file.)
+ - Relocatable Object code        and          -  Object code of Library Functions
+    Linker
+ - Executable code (PR1.EXE)
 
 #### Array:
 - An array is a collective name given to a group of ‘similar quantities’ i.e, An array is a collection of similar elements.
