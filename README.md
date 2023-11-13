@@ -167,5 +167,45 @@
 - It is possible to construct multidimensional arrays.
 - A 2-D array is a collection of several 1-D arrays.
 - A 3-D array is a collection of several 2-D arrays.        
-- All elements of a 2-D or a 3-D array are internally accessed using pointers.  
+- All elements of a 2-D or a 3-D array are internally accessed using pointers.
+
+  #### Strings
+  - Character arrays are many a time also called .
+  - A string constant is a one-dimensional array of characters terminated by a null ( ’\0’ ) [also known as null character]
+  - all the characters of a string are stored in contiguous memory locations.
+  - Though scanf( ) can be used to receive multi-word strings, gets( ) can do the same job in a cleaner way. But gets() is capable of receiving one string with multiple words at a time.
+  - Both printf( ) and puts( ) can handle multi-word strings. But put() can display one string with multiple words
+  ##### string functions in C:
+  -  strlen  => Finds length of a string
+  - strlwr   =>  Converts a string to lowercase
+  - strupr  =>  Converts a string to uppercase
+  - strcat  =>  Appends one string at the end of another
+  - strncat  =>  Appends first n characters of a string at the end of another
+  - strcpy  =>  Copies a string into another
+  - strncpy  =>  Copies first n characters of one string into another
+  - strcmp  =>   Compares two strings
+  - strncmp  =>  Compares first n characters of two strings
+  - strcmpi  =>  Compares two strings by ignoring the case
+  - stricmp  =>  Compares two strings without regard to case (identical to strcmpi)
+  - strnicmp  =>  Compares first n characters of two strings without regard to case
+  - strdup  =>  Finds first occurrence of a given character in a string
+  - strchr  =>  Duplicates a string
+  - strrchr  =>  Finds last occurrence of a given character in a string
+  - strstr  =>  Finds first occurrence of a given string in another string
+  - strset  =>  Sets all characters of string to a given character
+  - strnset  =>  Sets first n characters of a string to a given character
+  - strrev  =>  Reverses string
+
+- **strlen( )**
+  - This function counts the number of characters present in a string
+  - what gets passed to strlen( ) is the address of the string and not the string itself
+  -  The function xstrlen( ) is fairly simple. All that it does is to keep counting the characters till the end of string is met.
+- **strcpy( )** 
+ - This function copies the contents of one string into another. The base addresses of the source and target strings should be supplied to this function
+- **strcat( )**
+ - This function concatenates two strings and give combined string
+- **strcmp( )** 
+ - This is a function which compares two strings to find out whether they are same or different. The two strings are compared character-bycharacter until there is a mismatch or end of one of the strings is reached, whichever occurs first.
+ - If the two strings are identical, strcmp( ) returns a value zero. If they’re not, it returns the numeric difference between the ASCII values of the first non-matching pair of characters.
+ 
 
