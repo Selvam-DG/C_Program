@@ -7,9 +7,10 @@ end of the array
 int main()
 {
     int number,i,j,temp;
+    
     printf("Enter the array size:");
     scanf("%d",&number);
-    
+    //taking array elements from the user
     int array_ele[number];
 
     for(i= 0;i<number;i++)
@@ -21,6 +22,7 @@ int main()
     // bubble sort
 
     for(i = 0; i< number; i++)
+    // first element  compare with the next element in array
     {
         for(j =0;j<(number-i-1);j++)
         {
@@ -29,11 +31,8 @@ int main()
                 temp = array_ele[j];
                 array_ele[j] = array_ele[j+1];
                 array_ele[j+1] = temp;
-                printf("Iteration J with condition; %d\n",j);
             }
-            printf("Iteration j\n");
         }
-        printf("Iteration I = %d\n",i);
     }
     printf("The sorted array is:");
 
