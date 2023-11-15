@@ -208,4 +208,5 @@
  - This is a function which compares two strings to find out whether they are same or different. The two strings are compared character-bycharacter until there is a mismatch or end of one of the strings is reached, whichever occurs first.
  - If the two strings are identical, strcmp( ) returns a value zero. If they’re not, it returns the numeric difference between the ASCII values of the first non-matching pair of characters.
  
-
+- Though in principle a 2-D array can be used to handle several strings, in practice an array of pointers to strings is preferred since it takes less space and is efficient in processing strings.
+- **malloc( )** function can be used to allocate space in memory on the fly during execution of the program.
