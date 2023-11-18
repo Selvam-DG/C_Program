@@ -10,14 +10,14 @@
 - Remember that out of the two/four bytes used to store an integer, the highest bit (16th/32nd bit) is used to store the sign of the integer. This bit is 1 if the number is negative and 0 if the number is positive
 -  By default all the variables are signed. We can declare a variable as unsigned to accommodate bigger value without increasing the bytes occupied.
 
-#### Decision Making
+### Decision Making
 - There are three ways for taking decisions in a program. First way is to use the if-else statement, second way is to use the conditional operators and third way is to use the switch statement.
 - The condition associated with an if statement is built using relational operators <, >, <=, >=, == and !=.
 -  An if-else statement can be nested inside another if-else statement.
 - An ‘if block’ need not always be associated with an ‘else block’. However, an ‘else block’ must always be associated with an if.
 - && and || are binary operators, whereas, ! is a unary operator
 -  Conditional operators can be used as an alternative to if-else statement if there is a single statement in the ‘if block’ and a single statement in the ‘else block’
-#### Loop
+### Loop
 - three methods by way of which we can repeat a part of a program. They are:
     (a) Using a **for **statement
     (b) Using a** while** statement
@@ -37,12 +37,12 @@
 - The conditional operators ? and : are sometimes called ternary operators since they take three arguments
       **syntax**: expression 1(condition) **?** expression 2 (print this if condition true) **:** expression 3  (print this if condition fails)
   
-#### switch-case-control:
+### switch-case-control:
 - The control statement that allows us to make a decision from the number of choices is called a switch, or more correctly a **switch-case-default**
 - Every statement in a switch must belong to some case or the other. If a statement doesn’t belong to any case, the compiler won’t report an error.
 - The switch keyword is followed by an integer or an expression that evaluates to an integer. The case keyword is followed by an integer or a character constant.
 - 
-#### Function
+### Function
 - To avoid repetition of code and bulky programs functionally related statements are isolated into a function.
 - Function declaration specifies the return type of the function and the types of parameters it accepts. 
 - Function definition defines the body of the function.
@@ -51,7 +51,7 @@
 -  A function can call itself. Such a process is called ‘recursion’.
 -  parameters also known as Arguments are passed inside the function. Actual Arguments are inside the main() function and formal arguments are in defined function.
 
-#### Pointers
+### Pointers
 - pointers are variables that contain addresses, and since addresses are always whole numbers, pointers would always contain whole numbers.
 - A pointer to a pointer is a variable that holds the address of a pointer variable.
 - The '&' operator fetches the address of the variable in memory.
@@ -61,12 +61,12 @@
 - Arguments can generally be passed to functions in one of the two ways:
     - sending the values of the arguments
     - sending the addresses of the arguments
-#### Recursion:
+### Recursion:
 - A function is called ‘recursive’ if a statement within the body of a function calls the same function
 - if you are to store five numbers then we can store them in five different variables, an array, a linked list, a binary tree, etc. All these different ways of organizing the data are known as data structures
 - A stack is a Last In First Out (LIFO) data structure
 - 
-#### storage classes in C: 
+### storage classes in C: 
 - Automatic storage class 
     - Storage: Memory.
     - Default value: An unpredictable value, often called a garbage value.
@@ -92,7 +92,7 @@
       -  Use register storage class for only those variables that are being used very often in a program. Reason is, there are very few CPU registers at our disposal and many of them might be busy doing something else. Make careful utilization of the scarce resources. A typical application of register storage class is loop counters, which get used a number of times in a program. 
       - Use extern storage class for only those variables that are being used by almost all the functions in the program. This would avoid unnecessary passing of these variables as arguments when making a function call. Declaring all the variables as extern would amount to a lot of wastage of memory space because these variables would remain active throughout the life of the program. 
       - If you don’t have any of the express needs mentioned above, then use the auto storage class. In fact, most of the times, we end up using the auto variables. This is because once we have used the variables in a function and are returning from it, we don’t mind losing them. 
-#### Data Types - Bytes - Format - Range
+### Data Types - Bytes - Format - Range
     - signed char - 1 byte - %c =>  -128  to  +127
     - unsigned char - 1 byte - %c => 0  to  255
     - short signed int - 2 bytes - %d => -32768  to  +32767
@@ -105,7 +105,7 @@
     - double - 8 bytes - %lf => -1.7e308  to  +1.7e308
     - long double - 10 bytes - %Lf => -1.7e4932  to  +1.7e4932
 
-#### Preprocessor
+### Preprocessor
 - Before a C program is compiled it is passed through another program called ‘Preprocessor’. The preprocessor offers several features called preprocessor directives. Each of these preprocessor directives begins with a # symbol
 - following preprocessor  directives are in C
   1. Macro expansion
@@ -142,7 +142,7 @@
 - We can make use of various preprocessor directives, such as #define, #include, #ifdef - #else - #endif, #if and #elif in our program.
 
 
-#### steps involved in converting a C program into an executable form.
+### steps involved in converting a C program into an executable form.
 
          - C Source code (PR1.C)
                         Preprocessor          ( the C source code is expanded based on the preprocessor directives like #define, #include, #ifdef, etc)
@@ -154,7 +154,7 @@
                         Linker
          - Executable code (PR1.EXE)
 
-#### Array:
+### Array:
 - An array is a collective name given to a group of ‘similar quantities’ i.e, An array is a collection of similar elements.
 - The first element in the array is numbered 0, so the last element is 1 less than the size of the array.
 - An array is also known as a subscripted variable. 
@@ -169,7 +169,7 @@
 - A 3-D array is a collection of several 2-D arrays.        
 - All elements of a 2-D or a 3-D array are internally accessed using pointers.
 
-  #### Strings
+####Strings
   - Character arrays are many a time also called .
   - A string constant is a one-dimensional array of characters terminated by a null ( ’\0’ ) [also known as null character]
   - all the characters of a string are stored in contiguous memory locations.
@@ -210,3 +210,39 @@
  
 - Though in principle a 2-D array can be used to handle several strings, in practice an array of pointers to strings is preferred since it takes less space and is efficient in processing strings.
 - **malloc( )** function can be used to allocate space in memory on the fly during execution of the program.
+
+
+### Structure:
+- syntax:
+  - struct <structure name> 
+    - { 
+      - structure element 1 ; 
+      - structure element 2 ; 
+      - structure element 3 ;
+   - } ; 
+-A structure contains a number of data types grouped together. These data types may or may not be of the same type
+- the elements of a structure, they are always stored in contiguous memory locations
+- use a dot (.) operator, to access the element of structure.
+  1. A structure is usually used when we wish to store dissimilar data together.
+  2. Structure elements can be accessed through a structure variable using a dot (.) operator.
+  3. Structure elements can be accessed through a pointer to a structure using the arrow (->) operator.
+  4. All elements of one structure variable can be assigned to another structure variable using the assignment (=) operator.
+  5. It is possible to pass a structure variable to a function either by value or by address.
+  6. It is possible to create an array of structures. 
+
+### Console Input/Output Function:
+
+- There are numerous library functions available for I/O. These can be classified into two broad categories:
+  - Console I/O functions
+    - Functions to receive input from keyboard and write output to VDU. 
+  - File I/O functions :
+    - Functions to perform I/O operations on a floppy disk or a hard disk. 
+
+- The screen and keyboard together are called a console
+
+
+
+
+
+
+
