@@ -239,10 +239,18 @@
     - Functions to perform I/O operations on a floppy disk or a hard disk. 
 
 - The screen and keyboard together are called a console
-
-
-
-
-
+- Console I/O functions can be further classified into two categories—formatted and unformatted  console I/O functions.
+- The basic difference between them is that the formatted functions allow the input read from the keyboard or the output displayed on the VDU to be formatted as per our requirements
+- Formatted Console Functions
+  - printf(), scanf()
+ 
+- Unformatted Console Functions
+  - getch(), fgetch(), putch(),fputch(),gets(),puts()
+- The format string can contain: 
+  1. Characters that are simply printed as they are 
+  2. Format specifications that begin with a "%" sign 
+  3. Escape sequences that begin with a "\" sign 
+- The formatted console I/O functions can force the user to receive the input in a fixed format and display the output in a fixed format
+-  Unformatted console I/O functions work faster since they do not have the overheads of formatting the input or output.
 
 
