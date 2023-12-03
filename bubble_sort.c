@@ -20,13 +20,17 @@ int main()
     }
 
     // bubble sort
+    // compare adjacent elements and swap values if condition satisfies.
+    // largest value in the array goes to the end of array
 
-    for(i = 0; i< number; i++)
-    // first element  compare with the next element in array
+    for(i = 0; i< number; i++)  
     {
+        //instead of checking with all the elements, compare with adjacent elements
+        // first element  compare with the next element in array
         for(j =0;j<(number-i-1);j++)
+
         {
-            if(array_ele[j]>array_ele[j+1])
+            if(array_ele[j] > array_ele[j+1])
             {
                 temp = array_ele[j];
                 array_ele[j] = array_ele[j+1];
