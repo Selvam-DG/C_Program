@@ -22,8 +22,9 @@ int main()
     //selection_sort(&sample_array[0],SIZE);
     // comparing one element with all other element inside the array
     // if element is greater than the next element swap the element with the other element
+    
 
-    for (i = 0; i < number; i++)
+    for (i = 0; i < number; i++)    // smallest vaalue in the array comes to the first value of the array
     {
         for (int j =i+1; j < number; j++)
         {
