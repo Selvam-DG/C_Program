@@ -76,6 +76,8 @@ void student_by_year(struct student *s ,  int year)
     // else{
     //     printf("\n no students joined that particular year");
     // }
+    printf("%d",year);
+    printf("%d", &s);
     for (int j=0; j<n; j++)
     {
         printf("%d, %s, %s ,%s, %d", s->roll_no,s->name,s->dept,s->course,s->year);
