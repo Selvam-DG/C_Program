@@ -28,11 +28,6 @@ int main()
         {
             zero_count ++;
         }
-        // else
-        // {
-        //     printf("Sory, you have entered invalid number");
-        //     break;
-        // }
         
         printf("Do you want to continue? Type 'y ' to continue or 'n' to quit : " );
 
